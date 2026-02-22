@@ -1,0 +1,74 @@
+/* ===== RESET ===== */
+* { margin:0; padding:0; box-sizing:border-box; }
+body { font-family:Arial,sans-serif; color:#ddd; background:#111; line-height:1.6; }
+
+/* HEADER */
+header { position:fixed; top:0; left:0; width:100%; background:rgba(17,17,17,0.95); display:flex; justify-content:space-between; align-items:center; padding:15px 50px; z-index:1000; }
+header .logo { font-size:24px; font-weight:bold; color:#FFD700; }
+header nav a { color:#fff; text-decoration:none; margin-left:20px; font-weight:500; transition:0.3s; }
+header nav a:hover { color:#FFD700; }
+.menu-toggle { display:none; cursor:pointer; color:#FFD700; font-size:24px; }
+
+/* HERO */
+.hero { position:relative; height:100vh; display:flex; align-items:center; justify-content:center; text-align:center; overflow:hidden; }
+.hero-video { position:absolute; top:0; left:0; width:100%; height:100%; background-size:cover; background-position:center; animation:zoom 20s infinite alternate; z-index:-2; }
+.hero-overlay { position:absolute; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.5); z-index:-1; }
+.hero-content h1 { font-size:48px; margin-bottom:20px; }
+.hero-content h1 span { color:#FFD700; }
+.hero-content p { font-size:18px; color:#ddd; margin-bottom:25px; }
+.hero-buttons a { text-decoration:none; padding:10px 25px; margin:0 10px; border-radius:5px; transition:0.3s; }
+.btn-primary { background:#FFD700; color:#111; }
+.btn-primary:hover { background:#fff; color:#111; }
+.btn-secondary { background:#111; border:1px solid #FFD700; color:#FFD700; }
+.btn-secondary:hover { background:#FFD700; color:#111; }
+
+/* COURSES */
+.courses-container { display:flex; flex-wrap:wrap; justify-content:center; gap:20px; padding:40px 10px; }
+.course-item { background:#222; border-radius:10px; padding:15px; max-width:300px; text-align:center; transition:0.3s; }
+.course-item img { width:100%; border-radius:10px; margin-bottom:10px; }
+.course-item h3 { color:#FFD700; margin-bottom:10px; }
+.course-item p { color:#ddd; margin-bottom:10px; }
+.course-item .certificate { color:#FFD700; font-weight:bold; }
+.course-item:hover { transform:scale(1.05); }
+
+/* DEPARTMENTS */
+.departments-container { display:flex; flex-wrap:wrap; justify-content:center; gap:20px; padding:40px 10px; }
+.department-item { width:250px; background:#222; border-radius:10px; text-align:center; padding:15px; transition:0.3s; }
+.department-item img { width:100%; border-radius:10px; margin-bottom:10px; }
+.department-item:hover { transform:scale(1.05); }
+
+/* TESTIMONIALS */
+.testimonial { background:#222; padding:20px; margin:20px auto; max-width:600px; border-radius:10px; text-align:center; }
+.testimonial h4 { color:#FFD700; margin-top:10px; }
+
+/* GALLERY */
+.gallery-container { display:flex; flex-wrap:wrap; justify-content:center; gap:15px; padding:30px 10px; }
+.gallery-container img { width:250px; border-radius:10px; transition:0.3s; }
+.gallery-container img:hover { transform:scale(1.05); }
+
+/* QUERY FORM */
+form { max-width:600px; margin:0 auto; padding:20px; background:#222; border-radius:10px; display:flex; flex-direction:column; gap:15px; }
+form input, form textarea { padding:10px; border:none; border-radius:5px; background:#111; color:#fff; resize:none; }
+form button { padding:12px; background:#FFD700; border:none; color:#111; cursor:pointer; border-radius:5px; }
+form button:hover { background:#fff; color:#111; }
+
+/* FOOTER */
+footer { text-align:center; padding:15px; background:#111; color:#ddd; }
+
+/* FLOATING BUTTONS */
+.whatsapp, .facebook { position:fixed; bottom:20px; width:50px; height:50px; border-radius:50%; display:flex; align-items:center; justify-content:center; font-size:24px; color:#fff; z-index:1000; transition:0.3s; }
+.whatsapp { right:80px; background:#25d366; }
+.facebook { right:20px; background:#3b5998; }
+.whatsapp:hover, .facebook:hover { transform:scale(1.1); }
+
+/* ANIMATIONS */
+@keyframes zoom { 0%{transform:scale(1)} 100%{transform:scale(1.1)} }
+
+/* RESPONSIVE */
+@media (max-width:768px) {
+  .courses-container, .departments-container, .gallery-container { flex-direction:column; align-items:center; }
+  .menu-toggle { display:block; }
+  header nav { display:none; flex-direction:column; background:#111; position:absolute; top:60px; right:0; width:200px; padding:15px; }
+  header nav.show { display:flex; }
+  header nav a { margin:10px 0; }
+}

@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Iconic Coffee Group</title>
+
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<!-- AOS Animations -->
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<!-- Main CSS -->
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- HEADER -->
+<header>
+  <div class="logo">Iconic Coffee Group</div>
+  <div class="menu-toggle" id="menu-toggle"><i class="fas fa-bars"></i></div>
+  <nav id="nav">
+    <a href="#home">Home</a>
+    <a href="#courses">Courses</a>
+    <a href="#departments">Departments</a>
+    <a href="#query-form">Query</a>
+    <a href="#testimonials">Testimonials</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<!-- HERO SECTION -->
+<section class="hero" id="home">
+  <div class="hero-video" style="background:url('images/hero-coffee.jpg') center/cover no-repeat;"></div>
+  <div class="hero-overlay"></div>
+  <div class="hero-content" data-aos="fade-up">
+    <h1><span id="typed-text"></span></h1>
+    <p>Learn, Practice & Become a Certified Professional!</p>
+    <div class="hero-buttons">
+      <a href="#courses" class="btn-primary">Explore Courses</a>
+      <a href="https://wa.me/971503011706" class="btn-secondary" target="_blank">WhatsApp</a>
+    </div>
+  </div>
+</section>
+
+<!-- COURSES -->
+<section id="courses" data-aos="fade-up">
+  <h2>Certification & Diploma Courses</h2>
+  <div class="courses-container">
+    <div class="course-item">
+      <img src="images/Bristacourse.jpg" alt="Barista Course">
+      <h3>Barista Course</h3>
+      <p>Learn espresso, latte art & professional coffee making.</p>
+      <p class="certificate">🎓 Certificate Provided</p>
+      <a href="#query-form" class="btn-primary">Enroll Now</a>
+    </div>
+    <div class="course-item">
+      <img src="images/CoffeCourse.jpg" alt="Baking Course">
+      <h3>Baking Course</h3>
+      <p>Master cakes, bread, and pastry with expert trainers.</p>
+      <p class="certificate">🎓 Certificate Provided</p>
+      <a href="#query-form" class="btn-primary">Enroll Now</a>
+    </div>
+    <div class="course-item">
+      <img src="images/Managementcourse.jpg" alt="Hotel Management">
+      <h3>Hotel Management</h3>
+      <p>Hands-on training for hospitality & hotel operations.</p>
+      <p class="certificate">🎓 Certificate Provided</p>
+      <a href="#query-form" class="btn-primary">Enroll Now</a>
+    </div>
+  </div>
+</section>
+
+<!-- DEPARTMENTS -->
+<section id="departments" data-aos="fade-up">
+  <h2>Our Departments</h2>
+  <div class="departments-container">
+    <div class="department-item">
+      <img src="images/Bristacourse.jpg" alt="Barista Department">
+      Barista Courses
+    </div>
+    <div class="department-item">
+      <img src="images/Course2baking.jpg" alt="Baking Department">
+      Baking Courses
+    </div>
+    <div class="department-item">
+      <img src="images/Coffee.jpg" alt="Hotel Department">
+      Hotel & Restaurant Management
+    </div>
+    <div class="department-item">
+      <img src="images/Coffee1.jpg" alt="Business Department">
+      Business Management
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section id="testimonials" data-aos="fade-up">
+  <h2>What Our Students Say</h2>
+  <div class="testimonial">
+    <p>"I learned everything from espresso to latte art. Now I’m a barista at a café!"</p>
+    <h4>- Himal (Nepal)</h4>
+  </div>
+  <div class="testimonial">
+    <p>"The baking course exceeded my expectations. Excellent instructors!"</p>
+    <h4>- Kudamul Ravindra</h4>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section id="gallery" data-aos="fade-up">
+  <h2>Gallery</h2>
+  <div class="gallery-container">
+    <img src="images/Galary3.jpg" alt="Coffee">
+    <img src="images/Galary 2.jpg" alt="Cafe Interior">
+    <img src="images/Galary1.jpg" alt="Latte Art">
+  </div>
+</section>
+
+<!-- QUERY FORM -->
+<section id="query-form" data-aos="fade-up">
+  <h2>Submit Your Query</h2>
+  <form action="https://formspree.io/f/yourformid" method="POST">
+    <input type="text" name="name" placeholder="Your Name" required>
+    <input type="email" name="email" placeholder="Your Email" required>
+    <input type="text" name="course" placeholder="Course Interested In" required>
+    <textarea name="message" placeholder="Your Message" required></textarea>
+    <button type="submit">Submit Query</button>
+  </form>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" data-aos="fade-up">
+  <div class="address-container">
+    <h3>Our Location</h3>
+    <p>Near Union Exit 2: Tajvi Gold Building, Office No 103</p>
+</div>
+  <p><strong>WhatsApp:</strong> +971503011706</p>
+  <p><strong>Website:</strong> www.iconiccoffeegrp.com</p>
+  <div class="contact-section">
+    <div class="map-container">
+        <iframe 
+            src="https://www.google.com/maps?q=Ajman&output=embed" 
+            width="100%" 
+            height="300" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy">
+        </iframe>
+    </div>
+
+    <div class="address-container">
+        <h3>Our Location</h3>
+        <p>Near Union Exit 2: Tajvi Gold Building, Office No 103</p>
+    </div>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <p>© 2026 Iconic Coffee Group | www.iconiccoffeegrp.com</p>
+</footer>
+
+<!-- FLOATING BUTTONS -->
+<a href="https://wa.me/971503011706" class="whatsapp" target="_blank"><i class="fab fa-whatsapp"></i></a>
+<a href="https://www.facebook.com/share/1CAqs4GpbM/" class="facebook" target="_blank"><i class="fab fa-facebook-f"></i></a>
+
+<!-- JS -->
+<script src="script.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+AOS.init();
+</script>
+</body>
+</html>
